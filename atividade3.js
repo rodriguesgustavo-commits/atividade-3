@@ -4,23 +4,23 @@ const produtos = [
         nome: "Monitor",
         valor: "R$ 1200,00",
         quantidade: 100,
-        peso: 10,
-        marca: "AAAAAAA",
+        peso: 8,
+        marca: "AAAAA",
         codigo: 1234
     },
     {
         nome: "Teclado",
         valor: "R$ 250,00",
         quantidade: 100,
-        peso: 10,
-        marca: "BBBBBBB",
+        peso: 88,
+        marca: "BBBBB",
         codigo: 1234
     },
     {
         nome: "Mouse",
         valor: "R$ 150,00",
         quantidade: 100,
-        peso: 10,
+        peso: 130,
         marca: "CCCCC",
         codigo: 1234
     },
@@ -28,70 +28,63 @@ const produtos = [
         nome: "headset",
         valor: "R$ 300,00",
         quantidade: 100,
-        peso: 10,
-        marca: "DDDDDDD",
+        peso: 400,
+        marca: "DDDDD",
         codigo: 1234
     },
     {
         nome: "Cadeira Gamer",
         valor: "R$ 1500,00",
         quantidade: 100,
-        peso: 10,
+        peso: 150,
         marca: "EEEEEE",
         codigo: 1234
     },
     {
         nome: "Gabinete",
-        valor: "R$ 20,00",
+        valor: "R$ 450,00",
         quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
+        peso: 13,
+        marca: "FFFFF",
         codigo: 1234
     },
-    { {
+    {
         nome: "Memória RAM",
-        valor: "R$ 20,00",
+        valor: "R$ 320,00",
         quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
+        peso: 40,
+        marca: "GGGGG",
         codigo: 1234
     },
-        nome: "Teclado",
-        valor: "R$ 20,00",
+    {    nome: "SSD 1TB",
+        valor: "R$ 500,00",
         quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
-        codigo: 1234
-    },
-    {
-        nome: "Teclado",
-        valor: "R$ 20,00",
-        quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
+        peso: 7,
+        marca: "HHHHH",
         codigo: 1234
     },
     {
-        nome: "Teclado",
-        valor: "R$ 20,00",
+        nome: "Placa de Vídeo",
+        valor: "R$  2800,00",
         quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
+        peso: 400,
+        marca: "IIIII",
         codigo: 1234
     },
-    { {
-        nome: "Teclado",
-        valor: "R$ 20,00",
+    {
+        nome: "Processador",
+        valor: "R$  1900,00",
         quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
-        codigo: 1234
-    },
-        nome: "Teclado",
-        valor: "R$ 20,00",
-        quantidade: 100,
-        peso: 10,
-        marca: "BBBB",
+        peso: 50,
+        marca: "JJJJJ",
         codigo: 1234
     },
 ]
+
+// Converter para JSON
+const dadosJSON = JSON.stringify(produtos, nu10, 2);
+
+// Criar arquivo JSON
+fs.writeFileSync("banco_de_dados.json", dadosJSON);
+
+console.log("Arquivo JSON criado com sucesso!");
