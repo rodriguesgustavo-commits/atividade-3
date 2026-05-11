@@ -82,9 +82,10 @@ const produtos = [
 ]
 
 // Converter para JSON
-const dadosJSON = JSON.stringify(produtos, nu10, 2);
+const dadosJSON = JSON.stringify(produtos);
 
 // Criar arquivo JSON
+const fs = require("fs")
 fs.writeFileSync("banco_de_dados.json", dadosJSON);
 
 console.log("Arquivo JSON criado com sucesso!");
